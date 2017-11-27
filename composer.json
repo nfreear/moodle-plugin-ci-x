@@ -1,0 +1,31 @@
+{
+	"name"       : "nfreear/moodle-plugin-ci-x",
+	"description": "Test against the Moodle coding style, without the 'Boilerplate' requirement. © Nick Freear",
+	"keywords"   : [ "phpcs", "standards", "Moodle", "moodle-plugin-ci" ],
+	"type"       : "phpcodesniffer-standard",
+	"license"    : "proprietary",
+	"time"       : "2017-11-25",
+	"authors"    : [ { "name" : "Nick Freear" } ],
+	"require"    : {
+		"php": ">=5.4.0",
+		"moodlerooms/moodle-plugin-ci": "^1.5",
+		"moodlerooms/moodle-coding-standard": "^2.0.0",
+		"squizlabs/php_codesniffer": "^2.6"
+	},
+	"suggest"    : {
+		"dealerdirect/phpcodesniffer-composer-installer": "^0.4.3"
+	},
+	"minimum-stability" : "RC",
+	"support"    : {
+		"source"   : "https://github.com/nfreear/moodle-plugin-ci-x"
+	},
+	"scripts"    : {
+		"post-install-cmd": "\"vendor/bin/phpcs\" --config-set installed_paths ../../..",
+		"post-update-cmd" : "\"vendor/bin/phpcs\" --config-set installed_paths ../../.."
+	},
+	"extra"      : {
+    "branch-alias": {
+      "dev-master": "1.0.x-dev"
+    }
+  }
+}
