@@ -13,11 +13,9 @@ Example `composer.json`, with a `test` script:
 ```js
 {
   "name": "nfreear/moodle-local_example",
-  "description": "An example plugin …",
   "type": "moodle-local",
 
   "require": {
-    "php": ">=5.5.9",
     "composer/installers": "^1.4"
   },
   "require-dev": {

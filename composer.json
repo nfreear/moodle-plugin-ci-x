@@ -6,6 +6,7 @@
 	"license"    : "proprietary",
 	"time"       : "2017-11-25",
 	"authors"    : [ { "name" : "Nick Freear" } ],
+	"bin"        : [ "bin/thirpartylibs.xml.php" ],
 	"require"    : {
 		"php": ">=5.4.0",
 		"moodlerooms/moodle-plugin-ci": "^1.5",
@@ -17,7 +18,7 @@
 	},
 	"minimum-stability" : "RC",
 	"support"    : {
-		"source"   : "https://github.com/nfreear/moodle-plugin-ci-x"
+		"source"   : "https://github.com/nfreear/moodle-plugin-ci-x.git"
 	},
 	"scripts"    : {
 		"post-install-cmd": "\"vendor/bin/phpcs\" --config-set installed_paths ../../..",
